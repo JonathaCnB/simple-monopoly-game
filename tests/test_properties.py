@@ -1,4 +1,3 @@
-import math
 import unittest
 
 from core.property import Property
@@ -20,7 +19,7 @@ class TestProperties(unittest.TestCase):
         self.assertLessEqual(self.property1.value, 450)
 
     def test_property_attr_rent_has_a_correct_value(self):
-        rent = math.ceil(self.property1.value * 0.4)
+        rent = round(self.property1.value * 0.4)
         self.assertEqual(self.property1.rent, rent)
 
 
