@@ -18,7 +18,7 @@ class Players:
         return players
 
     @staticmethod
-    def randon_players(players: dict) -> dict:
+    def random_players(players: dict) -> dict:
         player_values = list(players.keys())
         position = 0
         random.shuffle(player_values)
