@@ -1,4 +1,3 @@
-# from core.behaviors import Behaviors
-from core.game import Game
+from game.play_game import play_game
 
-print(Game.create_board())
+play_game()
